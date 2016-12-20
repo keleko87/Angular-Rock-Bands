@@ -1,3 +1,24 @@
-<ul>
-    <li ng-repeat="band in bands"><a ng-href="#/home/{{band.id}}">{{band.name}}</a></li>
-</ul>
+
+    <div class="jumbotron bgimage">
+        <div class="container jumbotron-text">
+            <h1>The Best Rock Bands</h1>
+            <p>
+                It would be a gross oversimplification of terms to call ‘rock music’ a genre. If rock music is a genre, what defines it? A few guitars? A powerful drummer? An ostentatious drug habit?
+            </p>
+
+        </div>
+    </div>
+
+<div class="container">
+    <div class="row">
+        <div ng-repeat="band in bands" class="col-md-4">
+            <img ng-src="{{band.image}}" class="image-responsive band-image">
+            <h2><a ng-href="#/home/{{band.id}}">{{band.name}}</a></h2>
+            <p>{{band.text}}</p>
+            <p><a class="btn btn-default" ng-href="#/home/{{band.id}}" role="button">Ver »</a></p>
+        </div>
+    </div>
+
+    <hr>
+
+</div>

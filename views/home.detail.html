@@ -1,1 +1,16 @@
-<h2>{{band.name}}</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <!-- 16:9 aspect ratio -->
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Jbt8oH5Lxto"></iframe>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <h1>{{band.name}}</h1>
+            <p>{{band.text}}</p>
+            <img ng-src="{{band.image}}" class="image-responsive band-image">
+        </div>
+
+    </div>
+</div>

@@ -58,24 +58,24 @@ bandsApp.controller('bandsController', function($scope) {
             name: 'The Rolling Stones',
             url: 'the-rolling-stones',
             embed: 'https://www.youtube.com/embed/iXd6O321Ruc',
-            image: '',
-            text: ''
+            image: 'images/rolling1.jpg',
+            text: 'The Rolling Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui'
         },
         {
             id: 1,
             name: 'The Beatles',
             url: 'the-beatles',
             embed: 'https://www.youtube.com/embed/Jbt8oH5Lxto',
-            image: '',
-            text: ''
+            image: 'images/beatles1.jpg',
+            text: 'The Beathes Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.'
         },
         {
             id: 2,
             name: 'Queen',
             url: 'queen',
             embed: 'https://www.youtube.com/embed/WUOtCLOXgm8',
-            image: '',
-            text: ''
+            image: 'images/queen1.jpg',
+            text: 'Queen Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.'
         }
     ];
 
