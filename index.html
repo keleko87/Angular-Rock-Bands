@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="bandsApp">
+<head>
+
+    <link rel="stylesheet" href="app/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/css/style.css">
+</head>
+
+<!-- apply our angular app to our site -->
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">Rock Bands</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a href="#/foo">foo</a></li>
+        <li><a href="#/bar">bar</a></li>
+    </ul>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+    <div ui-view></div>
+</div>
+
+<footer>
+    <div class="text-center">
+        <p>Footer here</p>
+        <p></p>
+    </div>
+</footer>
+
+<script src="app/js/jquery.min.js"></script>
+<script src="app/js/angular.min.js"></script>
+<script src="app/js/angular-ui-router.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

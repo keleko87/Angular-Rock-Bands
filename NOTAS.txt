@@ -1,0 +1,16 @@
+
+ Explicación de como he afrontado algunos puntos que requería el ejercicio
+
+ 1 - El ejercicio pedía crear 3 páginas para cada una de las bandas (Rolling, Beatles y Queen)
+ 2 - El ejercicio pedia que la Home tuviera el lista de las demás páginas
+
+    En estos dos punto después de pensarlo, decidí utilizar el Abs"tract State" para la HOME,
+    la cual es la que pide el ejercicio que tenga la lista.
+
+    Después crear una template hija para el listado de las bandas y una template detalle la cual mostrará
+    el contenido de cada página, el cual lo recojo en un array. Para que hubiera sido mas real ese contenido
+    debería haber estado en un JSON y haber hecho la lectura.
+
+
+
+
