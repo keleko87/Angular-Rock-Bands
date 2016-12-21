@@ -1,16 +1,35 @@
+<h1 class="text-center"></h1>
 <div class="container">
     <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
             <!-- 16:9 aspect ratio -->
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Jbt8oH5Lxto"></iframe>
+                <youtube-video video-id="band.embed"></youtube-video>
             </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <img ng-src="{{band.image}}" class="image-responsive band-image">
             <h1>{{band.name}}</h1>
             <p>{{band.text}}</p>
-            <img ng-src="{{band.image}}" class="image-responsive band-image">
         </div>
-
     </div>
+    <br>
+    <h2 class="text-center">Comments</h2>
+
+    <div class="row" ng-repeat="comm in bands[band.id].comments">
+        <div class="media">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                <a class="pull-left" href="">
+                    <img class="media-object" ng-src="{{comm.cimage}}" alt="">
+                </a>
+            </div>
+            <div class="media-body col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                <h4 class="media-heading">{{comm.author}}</h4>
+                {{comm.comment}}
+            </div>
+        </div>
+        <hr>
+    </div>
+
 </div>
+

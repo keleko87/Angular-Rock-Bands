@@ -1,16 +1,29 @@
 
- Explicación de como he afrontado algunos puntos que requería el ejercicio
-
- 1 - El ejercicio pedía crear 3 páginas para cada una de las bandas (Rolling, Beatles y Queen)
- 2 - El ejercicio pedia que la Home tuviera el lista de las demás páginas
-
-    En estos dos punto después de pensarlo, decidí utilizar el Abs"tract State" para la HOME,
-    la cual es la que pide el ejercicio que tenga la lista.
-
-    Después crear una template hija para el listado de las bandas y una template detalle la cual mostrará
-    el contenido de cada página, el cual lo recojo en un array. Para que hubiera sido mas real ese contenido
-    debería haber estado en un JSON y haber hecho la lectura.
+ Explicación de como he afrontado algunos puntos que requería el ejercicio y problemas encontrados.
 
 
+1 - El ejercicio pedia que la HOME tuviera el lista de las demás páginas
+
+    -  La HOME en el proyecto en index.html, el cual contiene los elementos comunes a todas las páginas (head, footer...)
+
+
+2 - El ejercicio pedía crear 3 páginas para cada una de las bandas (Rolling, Beatles y Queen)
+
+    -  En este punto he entendido que las 3 páginas de bandas, debía ser escalable, es decir que haya un template que liste todas las bandas (home.list.html)
+    y una template detalle (home.detail.html). Decicí utilizar el "Abstract State" para Home y listar las bandas
+    Aqui encontré el problema de que la URL de home.detail.html es por ID y el enunciado pedía por URL. No fui capaz de hacerlo por URL con $stateParams.
+    Imagino que si que es posible hacerlo.
+
+    - Las bandas estan contenidas en un array. Lo suyo habría sido que hubiera creado un JSON y leerlo.
+
+
+3 - SEO
+
+    - He utilizado NgMeta -> http://ngmodules.org/modules/ngMeta
+
+    - De la manera que he creado el listado de bandas, en vez de crear una template Html
+      he limitado la opción de poder dar a cada banda sus valores para el SEO.
+      Creo que me he complicado un poco más de lo necesario en la estructuración de las rutas y páginas de la app,
+      pero quería hacerlo de manera que sea escalable, y creo que era una buena opción.
 
 
